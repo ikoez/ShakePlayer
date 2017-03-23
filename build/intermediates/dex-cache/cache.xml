@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Siyuan\.AndroidStudio1.5\ShakePlayerseek\app\libs\musicg-1.4.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e4cc5194d9313717e173c63eb38dd220a63b5532">
+        <dex dex="C:\Users\Siyuan\.AndroidStudio1.5\ShakePlayerseek\app\build\intermediates\pre-dexed\debug\musicg-1.4.2.0_ea34aa95e2ba0ff0a03101a233bdcadb906749a0.jar" />
+    </item>
+
+</items>
