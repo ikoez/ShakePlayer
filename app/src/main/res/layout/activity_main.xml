@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.csy.shakeplayer.MainActivity">
+
+    <com.example.csy.shakeplayer.TextMoveLayout
+        android:id="@+id/textLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/soundprocessseekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/soundprocessseekBar"
+        style="@style/SeekBarAppTheme"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume:"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/SoundSeekBar"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:id="@+id/SoundSeekBar"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"
+        style="@style/SeekBarAppTheme"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/Play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="▶"
+
+        android:background="@drawable/mainmenubutton"
+        android:layout_alignTop="@+id/Pause"
+        android:layout_toLeftOf="@+id/Pause"
+        android:layout_toStartOf="@+id/Pause" />
+
+    <Button
+        android:id="@+id/Pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="||"
+        android:background="@drawable/mainmenubutton"
+        android:layout_alignTop="@+id/Stop"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        android:id="@+id/Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="▄"
+        android:background="@drawable/mainmenubutton"
+        android:layout_marginBottom="0dp"
+        android:layout_above="@+id/switchvolume"
+        android:layout_toRightOf="@+id/Pause"
+        android:layout_toEndOf="@+id/Pause" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="music name"
+        android:id="@+id/musicname"
+        android:textStyle="bold"
+        android:layout_above="@+id/soundprocessseekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/starttime"
+        android:layout_below="@+id/soundprocessseekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/finishtime"
+        android:layout_alignTop="@+id/starttime"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp" />
+
+    <RelativeLayout
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/musicname"
+        android:layout_alignParentTop="true" >
+    </RelativeLayout>
+
+    <TextView
+        android:text="Gestures Area"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:id="@+id/switchvolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tilt To Volume"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/switchclap"
+        android:layout_alignLeft="@+id/Play"
+        android:layout_alignStart="@+id/Play" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In Pocket"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/switchclap"
+        android:layout_alignStart="@+id/switchclap" />
+
+    <Switch
+        android:id="@+id/switchclap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clap To Play"
+        android:layout_above="@+id/switch2"
+        android:layout_alignLeft="@+id/switchvolume"
+        android:layout_alignStart="@+id/switchvolume"
+        android:layout_marginBottom="12dp" />
+
+</RelativeLayout>
